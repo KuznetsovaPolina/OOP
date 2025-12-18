@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(Lab7Fixed)
+set(CMAKE_CXX_STANDARD 20)
+find_package(Threads REQUIRED)
+add_executable(main src/main.cpp src/Game.cpp)
+target_link_libraries(main PRIVATE Threads::Threads)
